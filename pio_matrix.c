@@ -21,7 +21,7 @@ double* matrizesNumeros[] = {
 #define NUM_PIXELS 25
 #define OUT_PIN 7
 #define TOTAL_NUMEROS 10
-#define DEBOUNCE_MS 200
+#define DEBOUNCE_MS 250
 #define LED_PIN_RED 13
 
 // estado do led
@@ -29,8 +29,8 @@ bool led_state = false;
 static uint32_t ultimo_toggle = 0;
 
 // Botões
-const uint BTN_DEC = 5;  // GPIO5 - Decremento
-const uint BTN_INC = 6;  // GPIO6 - Incremento
+const uint BTN_DEC = 6;  // GPIO5 - Decremento
+const uint BTN_INC = 5;  // GPIO6 - Incremento
 
 // Variável compartilhada
 volatile int numero_atual = 0;
